@@ -5,7 +5,7 @@ __version__ = '1.0.1'
 
 VERSION = __project__ + '-' + __version__
 
-PYTHON_VERSION = 2, 7
+PYTHON_VERSION = 3, 3
 
 import sys
 if not sys.version_info >= PYTHON_VERSION:  # pragma: no cover (manual test)
@@ -50,7 +50,7 @@ def before_after(
             return ret
         return inner
 
-    from mock import patch
+    from unittest.mock import patch
 
     patcher = patch(target, **kwargs)
     original, _ = patcher.get_original()
