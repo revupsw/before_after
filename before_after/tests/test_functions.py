@@ -4,7 +4,7 @@ def reset_test_list():
     del test_list[:]
 
 def sample_fn(arg):
-    print 'sample', arg
+    print('sample', arg)
     test_list.append(arg)
 
 
@@ -13,5 +13,5 @@ class Sample(object):
         self.instance_list = []
 
     def method(self, arg):
-        print 'Sample.method', arg
+        print('Sample.method', arg)
         self.instance_list.append(arg)
